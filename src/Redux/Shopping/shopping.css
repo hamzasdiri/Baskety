@@ -1,0 +1,11 @@
+.lastbtn {font-size: 1rem;
+    border-radius: 2px;
+  padding: 1rem 4rem;
+  background: #e31837;
+  color: #fff;
+  transition: 0.2 ease-out;}
+  .lastbtn:hover {
+    background: #ffc500;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    color: #000;}

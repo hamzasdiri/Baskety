@@ -1,0 +1,147 @@
+/* --- HEADER --- */
+header.container {
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  header .breadcrumb {
+    color: red;
+    background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+  }
+  
+  header .breadcrumb li {
+    float: left;
+    padding: 0 6px;
+  }
+  
+  header .breadcrumb li:first-child {
+    padding-left: 2px;
+  }
+  
+  header .breadcrumb li:not(:last-child)::after {
+    content: " \276f";
+    padding-left: 8px;
+  }
+  
+  header .count {
+    float: right;
+    color: #333333;
+  }
+  
+  .products {
+    border-top: 1px solid #ddd;
+  }
+  
+  .products > li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+
+  }
+  .row {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .summary {
+    font-size: 1.2rem;
+    text-align: right;
+  }
+  
+  .summary ul li {
+    padding: 0.5rem 0;
+  }
+  
+  .summary ul li span {
+    display: inline-block;
+    width: 30%;
+  }
+  
+  .summary ul li.total {
+    font-weight: bold;
+  }
+  
+  .checkout {
+    text-align: right;
+  }
+  
+  .checkout > button {
+    font-size: 1.2rem;
+    padding: 0.8rem 2.8rem;
+    border-radius: 1.5rem;
+  }
+  
+  .empty-product {
+    text-align: center;
+  }
+  
+  .empty-product > button {
+    font-size: 1.3rem; 
+    padding: 10px 30px; 
+    border-radius: 5px;
+  }
+  
+  .cart {
+    margin: 2rem auto;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart__items {
+    flex: 0.7;
+    margin-right: 1rem;
+  }
+  
+  .cart__summary {
+    height: 250px;
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+  }
+  
+  .summary__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .summary__price {
+    display: flex;
+    align-items: center;
+  }
+  
+  .summary__price span:nth-child(1) {
+    font-size: 0.9rem;
+    flex: 0.6;
+  }
+  
+  .summary__price span:nth-child(2) {
+    flex: 0.4;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .summary__checkoutBtn {
+    padding: 10px 17px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .summary__checkoutBtn:focus {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .summary__checkoutBtn:hover {
+    opacity: 0.75;
+  }

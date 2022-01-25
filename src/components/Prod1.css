@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: linear-gradient( to right, #ffffb3,#ffe6e6);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height:1000px;
+	width: auto;
+	max-width: 90%;
+	text-align: center;
+	align-items: center;
+	
+}
+
+.information{
+  margin-top:20px;
+  font-family: Papyrus, fantasy; font-size: 24px;  color: #333;
+}
+
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-details h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 20;
+  margin-left:370px;
+  margin-top: 10px;
+	
+}
+
+
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+
+
+
+#container .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	margin-left:250px;
+    margin-top: 200px;
+}
+.control{
+	position: relative;
+	bottom: 30%;
+	left: 25%;
+  top: 1%;
+	
+}
+.bouton {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #809fff;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+
+.btnTest{
+	margin-top: 15px;
+}
+.bouton:hover{transform: translateY(-6px);
+	background: #1a66ff;}
+
+.bouton span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+.bouton .price, .shopping-cart{
+	background: #333;
+
+}
+
+.bouton .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+.bouton .shopping-cart {
+	transform: translateX(-100%);
+  position: absolute;
+	background: #333;
+	z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.bouton .buy {z-index: 3; font-weight: bolder;}
+
+.bouton:hover .price {transform: translateX(-110%);color: #eee;}
+
+.bouton:hover .shopping-cart {transform: translateX(0%);color: #eee;}
+
+
+
+.product-imagee {
+	/*transition: all 0.3s ease-out;*/
+	position: relative;
+	/*overflow: hidden;*/
+	height: 100%;
+	float: left;
+	width: 45%;
+	bottom: 0%;
+	right:30%;
+}
+
+
+.car{
+	height:50%;
+	margin-left:-10px
+}
+
+
+.product-imagee:hover img {transition: all 0.3s ease-out;}
+.product-imagee:hover img {transform: scale(1.2, 1.2);}
+
+.imgg1{
+	margin-bottom: 300px;
+}
+.slider-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  }
+  .menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 20%;
+  left:20%
+
+  }
+  .menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: rgb(8, 1, 1);
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+  }
+  .menu label:hover,.menu label:focus {
+  background: #1c87c9;
+  }
+  .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+  }
+  [id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Modak");
+  .text {
+    height: 200px;
+    display: inline-block;
+    font-size: 150px;
+    line-height: 74%;
+    font-family: Modak;
+    padding-left: 5px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+    text-shadow: 7px 7px 0px #d2d2d22e;
+    }
+
+.text-1 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%23f5576c' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%23f093fb' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23fee140' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+
+  
+  select {
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+	outline:0;
+	box-shadow:none;
+	border:0!important;
+	background: #5c6664;
+	background-image: none;
+	flex: 1;
+	padding: 0 .5em;
+	color:#fff;
+	cursor:pointer;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+   flex-direction: column;
+   
+ }
+ select::-ms-expand {
+	display: none;
+ }
+ .select {
+	position: relative;
+	display: flex;
+	width:   50%;
+	height: 3em;
+	line-height: 3;
+	background: #5c6664;
+	overflow: hidden;
+	border-radius: .25em;
+	margin-left: 25%;
+	margin-top: 10px;
+
+ }
+ .select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	background: #2b2e2e;
+	cursor:pointer;
+	pointer-events:none;
+	transition:.25s all ease;
+ }
+ .select:hover::after {
+	color: #23b499;
+ }
