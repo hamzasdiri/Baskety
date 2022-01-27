@@ -17,7 +17,15 @@ function Prod(){
             image3:location.state.image3}];
 
             window.scrollTo(0, 0);
-
+            if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+                if(produc[0].id===undefined){
+                    produc=JSON.parse(localStorage.getItem('prod'));
+                }
+                else{
+                    localStorage.setItem('prod', JSON.stringify(produc));
+                    produc=JSON.parse(localStorage.getItem('prod'));
+                }
+            }
     return(
         <div>
             <Navbar />

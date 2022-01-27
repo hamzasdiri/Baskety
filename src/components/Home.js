@@ -5,8 +5,8 @@ import { connect } from "react-redux";
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './Home.css';
-function Home({cart}){
-
+function Home(){
+  
     return(
 
           <>

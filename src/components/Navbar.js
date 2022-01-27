@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from "react-redux";
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar,Nav,Container ,Form,FormControl,Button} from 'react-bootstrap';
 import logoo from '../img/baskett.png';
 import './Navbar.css';
 import logo from '../img/shop-cart.png';
 
-const Navbarr = () => {
+const Navbarr = ({cart}) => {
+ 
+if(JSON.parse(localStorage.getItem('newCart'))!==null);
+else{localStorage.setItem('newCart',JSON.stringify(cart));}
+
+
+
   let count = 0;
   JSON.parse(localStorage.getItem('newCart')).map(function(item){
     return(
@@ -53,4 +60,11 @@ count+=item.qty);
 
 
 
-export default Navbarr;
+
+const mapStateToProps = (state) => {
+  return {
+    cart: state.shop.cart,
+  };
+};
+
+export default connect(mapStateToProps)(Navbarr);
