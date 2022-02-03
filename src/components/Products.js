@@ -18,8 +18,8 @@ const Products=({products})=>{
          <Container >
                   <h1  style={{  textAlign: 'center',fontSize: 'clamp(2rem, 2.5vw, 3rem)',  color:'white'}}>Choose Your Favorite</h1>
                   <MDBContainer>
-      <MDBRow top>
-                     {products.map((product) => <MDBCol size="12" sm="6" lg="4"><Product key={product.id} product={product} /> </MDBCol>)}       
+      <MDBRow>
+                     {products.map((product) => <MDBCol size="12" sm="6" lg="4" style={{justifyContent: 'center'}}><Product key={product.id} product={product} /> </MDBCol>)}       
                      </MDBRow>
     </MDBContainer>
 

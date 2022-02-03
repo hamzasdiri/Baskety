@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 function SignUp(){
-    
+  window.scrollTo(0, 0);
     return( 
 <div>
 <Navbar />

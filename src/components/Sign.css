@@ -119,6 +119,7 @@ h2 {
   font-weight: 400;
   font-family: Poppins;
   margin-bottom: 140px;
+  margin-top: 150px;
 }
 
 .signup {
@@ -128,6 +129,7 @@ h2 {
   background: linear-gradient( to right, #ffffb3,#ffe6e6);
   font-weight: 400;
   font-family: Poppins;
+  margin-top: 150px;
 }
 
 .sign {

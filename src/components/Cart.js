@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Navbar from './Navbar';
 import Footer from './Footer';
 const Cart = ({ cart }) => {
-
+  window.scrollTo(0, 0);
 
 
   const [totalPrice, setTotalPrice] = useState(0);
@@ -32,7 +32,7 @@ const Cart = ({ cart }) => {
     
 <>
 <Navbar />
-<div style={{marginTop:'50px'}} ></div>
+<div style={{marginTop:'150px'}} ></div>
 
     <header className="container">
     <h1>Shopping Cart</h1>

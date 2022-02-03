@@ -5,8 +5,9 @@ import logo from '../img/basket1.png';
 import Navbar from './Navbar';
 import Footer from './Footer';
 function SignIn(){
-    
+  window.scrollTo(0, 0);
     return( 
+      
 <div>
 <Navbar />
 <section className="sign-in">

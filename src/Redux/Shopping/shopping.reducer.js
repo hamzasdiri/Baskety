@@ -77,7 +77,7 @@ export const init_state={
           price:'330DT',
           description:'Disponible chez nous Pointure 38/39/40/41/42 Livraison à domicile Satisfait(e) ou remboursé(e)',
           img: bas2
-        }}style={{ textDecoration: 'none' }} ><button className='lastbtn'>View Product</button></Link>
+        }}><button className='lastbtn'>View Product</button></Link>
       },
       {id:3,
         img: bas3,
@@ -95,7 +95,7 @@ export const init_state={
           price:'370DT',
           description:'Disponible chez nous Pointure 38/39/40/41/42 Livraison à domicile Satisfait(e) ou remboursé(e)',
           img: bas3
-        }}style={{ textDecoration: 'none' }} ><button className='lastbtn'>View Product</button></Link>
+        }}><button className='lastbtn'>View Product</button></Link>
       }
     ,
     

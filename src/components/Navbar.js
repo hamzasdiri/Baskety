@@ -1,9 +1,10 @@
-import React from 'react';
+import React  from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from "react-redux";
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar,Nav,Container ,Form,FormControl,Button} from 'react-bootstrap';
 import logoo from '../img/baskett.png';
+
 import './Navbar.css';
 import logo from '../img/shop-cart.png';
 
@@ -22,7 +23,7 @@ count+=item.qty);
  
     return (
         <>
-        <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark" className="justify-content-center navtest">
+        <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark" className="justify-content-center navtest" fixed="top">
   <Container>
         <img src={logoo} height="50" width="50" className="img-responsive" alt="1"/>
   <Navbar.Brand  className="brand"><h1><Link to={"/"} style={{ textDecoration: 'none',color: '#FFF' }}>BASKETY</Link></h1></Navbar.Brand>
@@ -32,7 +33,7 @@ count+=item.qty);
     </Nav>
 
     <Form className="d-flex">
-      <FormControl type="search" placeholder="Search" className="mr-2" aria-label="Search"/> 
+      <FormControl type="search" placeholder="Search" className="mr-2" aria-label="Search" /> 
       <Button variant="outline-success" className="search-btn">Search</Button>
     </Form>
 
@@ -54,6 +55,7 @@ count+=item.qty);
   </Navbar.Collapse>
   </Container>
 </Navbar>
+
         </>
     )
 }
